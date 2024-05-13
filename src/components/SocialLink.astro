@@ -1,0 +1,16 @@
+---
+import type { HTMLAttributes } from 'astro/types'
+
+type Props = HTMLAttributes<'a'> & { icon: any }
+
+const { href, class: className, icon: Icon, ...props } = Astro.props
+---
+
+<a
+  href={href}
+  class:list={[className, 'flex flex-row gap-2 items-center']}
+  {...props}
+>
+  <Icon />
+  <slot />
+</a>

@@ -8,20 +8,21 @@ body {
   font-style: normal;
   font-variation-settings: 'wdth' 100, 'YTLC' 500;
 
-  @apply px-10;
+  @apply px-5;
   @apply bg-ligth dark:bg-dark text-black dark:text-white;
+  @apply print:text-sm;
 }
 
 h1 {
-  @apply text-3xl py-5;
+  @apply text-3xl py-5 print:py-4;
 }
 
 h2 {
-  @apply text-2xl py-3;
+  @apply text-2xl py-3 print:py-2;
 }
 
 h3 {
-  @apply text-xl py-1;
+  @apply text-xl py-1 print:py-0;
 }
 
 hr {
