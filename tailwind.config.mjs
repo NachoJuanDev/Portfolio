@@ -1,0 +1,18 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  theme: {
+    extend: {
+      colors: {
+        // Dark mode
+        dark: '#282a36',
+        'text-white': 'white',
+
+        // Ligth mode
+        ligth: '#F8F8F2',
+        'text-black': 'black',
+      },
+    },
+  },
+  plugins: [],
+}
