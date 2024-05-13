@@ -11,3 +11,19 @@ body {
   @apply px-10;
   @apply bg-ligth dark:bg-dark text-black dark:text-white;
 }
+
+h1 {
+  @apply text-3xl py-5;
+}
+
+h2 {
+  @apply text-2xl py-3;
+}
+
+h3 {
+  @apply text-xl py-1;
+}
+
+hr {
+  @apply border border-gray-800 dark:border-gray-500 border-dashed my-5;
+}
