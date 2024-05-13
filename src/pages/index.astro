@@ -1,8 +1,9 @@
 ---
 import MainLayout from '@/layouts/MainLayout.astro'
+import SocialLink from '@/components/SocialLink.astro'
 import Github from '@/icons/Github.astro'
 import LinkedIn from '@/icons/LinkedIn.astro'
-import SocialLink from '@/components/SocialLink.astro'
+import Mail from '@/icons/Mail.astro'
 ---
 
 <MainLayout>
@@ -10,7 +11,10 @@ import SocialLink from '@/components/SocialLink.astro'
     class="w-full my-10 grid grid-cols-1 sm:grid-cols-[auto,1fr,1fr] gap-2 md:gap-0"
   >
     <div class="flex justify-center">
-      <img src="/me.webp" class="print:h-32 print:w-32 h-40 w-40 rounded-xl md:mr-5 print:mr-5" />
+      <img
+        src="/me.webp"
+        class="print:h-32 print:w-32 h-40 w-40 rounded-xl md:mr-5 print:mr-5"
+      />
     </div>
     <div class="flex flex-col items-center sm:items-start">
       <h2>Juan Salas Morales</h2>
@@ -31,6 +35,9 @@ import SocialLink from '@/components/SocialLink.astro'
       >
         <span class="hidden md:block">linkedin.com/in/juan-salas-morales</span>
         <span class="block md:hidden">juan-salas-morales</span>
+      </SocialLink>
+      <SocialLink href="mailto:jisalas1@uc.cl" icon={Mail}>
+        jisalas1@uc.cl
       </SocialLink>
     </div>
   </div>
