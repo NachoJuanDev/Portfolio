@@ -4,8 +4,9 @@ interface Props {
   description?: string
 }
 
-import BaseHead from '@/components/BaseHead.astro'
 import '../global.css'
+import BaseHead from '@/components/BaseHead.astro'
+import Header from '@/components/Header.astro'
 
 const {
   title = 'Portfolio - NachoJuan',
@@ -17,8 +18,8 @@ const {
   <head>
     <BaseHead title={title} description={description} />
   </head>
-
   <body>
+    <Header />
     <main class="container mx-auto">
       <slot />
     </main>

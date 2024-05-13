@@ -8,5 +8,6 @@ body {
   font-style: normal;
   font-variation-settings: 'wdth' 100, 'YTLC' 500;
 
+  @apply px-10;
   @apply bg-ligth dark:bg-dark text-black dark:text-white;
 }
