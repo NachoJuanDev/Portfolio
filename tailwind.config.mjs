@@ -10,7 +10,7 @@ export default {
 
         // Ligth mode
         ligth: '#F8F8F2',
-        'text-black': 'black',
+        'text-black': 'text-gray-900',
       },
     },
     container: {
