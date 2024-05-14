@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets'
+
+import ApolloGraphql from '@/icons/ApolloGraphql.astro'
+import Next from '@/icons/Next.astro'
+import Tailwind from '@/icons/Tailwind.astro'
+import TypeScript from '@/icons/TypeScript.astro'
+import ReactNative from '@/icons/ReactNative.astro'
+import Nest from '@/icons/Nest.astro'
+import Node from '@/icons/Node.astro'
+import Pudux_ from '@/images/pudux.svg'
+---
+
+<div>
+  <span class="flex flex-row">
+    <bold>- 2018-2024 -</bold>
+    <a href="https://pudux.cl" target="_blank" class="flex flex-row">
+      <Image
+        alt="Pudux"
+        src={Pudux_}
+        class="h-5 w-5 mx-2"
+        width={20}
+        height={20}
+      />
+      <bold>Pudux</bold>
+    </a>
+    , Software Factory.
+  </span>
+  <p>
+    En pudux desarrolle labores de desarrollador Fullstak y de líder de
+    proyecto. Trabajé con proyectos de clientes, participando de los procesos de
+    planificación, desarrollo y puesta en producción. Utilizamos tecnología
+    basadas en <code>JavaScript/TypeScript</code>, en <code>Frontend</code>,
+    <code>Mobile</code> y <code>Backend</code>.
+  </p>
+  <div class="flex flex-row flex-wrap gap-2 py-2">
+    <TypeScript />
+    <Node />
+    <Next />
+    <Tailwind />
+    <ReactNative />
+    <Nest />
+    <ApolloGraphql />
+  </div>
+</div>

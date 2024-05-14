@@ -6,6 +6,7 @@ import Github from '@/icons/Github.astro'
 import LinkedIn from '@/icons/LinkedIn.astro'
 import Mail from '@/icons/Mail.astro'
 import Me from '@/images/me.webp'
+import Pudux from '@/components/experience/Pudux.astro'
 ---
 
 <MainLayout>
@@ -17,6 +18,8 @@ import Me from '@/images/me.webp'
         alt="Imágen de perfil"
         src={Me}
         class="print:h-32 print:w-32 h-40 w-40 rounded-xl md:mr-5 print:mr-5"
+        height={128}
+        width={128}
       />
     </div>
     <div class="flex flex-col items-center sm:items-start">
@@ -46,12 +49,28 @@ import Me from '@/images/me.webp'
   </div>
 
   <h2>Whoami</h2>
-  <p>Work in progress..</p>
+  <p>
+    Desarrollador Fullstack con más de 5 años de experiencia. Apasionado por la
+    tecnologías y con ganas de seguir aprendiendo.
+  </p>
+  <p>
+    Me considero una persona proactiva, responsable y abierto a la conversación.
+    Me gusta trabajar en equipo, colaborar para conseguir el bien común y
+    resolver las necesidades del usuario.
+  </p>
+  <p>
+    Me gusta ver Anime y el deporte, me gusta trastear con la tecnología y
+    experimentar con proyectos nuevos.
+  </p>
+  <p>Tengo un perro llamado Kenai 🐶.</p>
 
   <hr />
 
   <h2>Experiencia</h2>
-  <p>Work in progress..</p>
+
+  <div class="flex flex-col gap-5">
+    <Pudux />
+  </div>
 
   <hr />
 
