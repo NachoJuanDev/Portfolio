@@ -1,9 +1,11 @@
 ---
+import { Image } from 'astro:assets'
 import MainLayout from '@/layouts/MainLayout.astro'
 import SocialLink from '@/components/SocialLink.astro'
 import Github from '@/icons/Github.astro'
 import LinkedIn from '@/icons/LinkedIn.astro'
 import Mail from '@/icons/Mail.astro'
+import Me from '@/images/me.webp'
 ---
 
 <MainLayout>
@@ -11,8 +13,9 @@ import Mail from '@/icons/Mail.astro'
     class="w-full my-10 grid grid-cols-1 sm:grid-cols-[auto,1fr,1fr] gap-2 md:gap-0"
   >
     <div class="flex justify-center">
-      <img
-        src="/me.webp"
+      <Image
+        alt="Imágen de perfil"
+        src={Me}
         class="print:h-32 print:w-32 h-40 w-40 rounded-xl md:mr-5 print:mr-5"
       />
     </div>
