@@ -6,11 +6,12 @@ interface Props {
 const { text } = Astro.props
 
 const normalizeText = (text: string) => {
-  // Convertir a minúsculas
   text = text.toLowerCase()
-  // Eliminar caracteres especiales y signos de puntuación
-  text = text.replace(/[^\w\s]/g, '')
-  // Reemplazar espacios con guiones
+  // Remove diacritics
+  text = text.normalize('NFD').replace(/\p{Diacritic}/gu, '')
+  // Remove special characters and punctuation marks
+  text = text.replace(/[^\w\s]|_/g, "")
+  // Change whitespace with '-'
   text = text.replace(/\s+/g, '-')
   return text
 }
