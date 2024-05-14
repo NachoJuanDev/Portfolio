@@ -1,14 +1,16 @@
 ---
 import { Image } from 'astro:assets'
 
-import ApolloGraphql from '@/icons/ApolloGraphql.astro'
-import Next from '@/icons/Next.astro'
-import Tailwind from '@/icons/Tailwind.astro'
-import TypeScript from '@/icons/TypeScript.astro'
-import ReactNative from '@/icons/ReactNative.astro'
-import Nest from '@/icons/Nest.astro'
-import Node from '@/icons/Node.astro'
+import ApolloGraphql from '@/badges/ApolloGraphql.svg'
+import Next from '@/badges/Next.svg'
+import Tailwind from '@/badges/Tailwind.svg'
+import TypeScript from '@/badges/TypeScript.svg'
+import ReactNative from '@/badges/ReactNative.svg'
+import Nest from '@/badges/Nest.svg'
+import Node from '@/badges/Node.svg'
 import Pudux_ from '@/images/pudux.svg'
+import AWS from '@/badges/AWS.svg'
+import Firebase from '@/badges/Firebase.svg'
 ---
 
 <div>
@@ -34,12 +36,14 @@ import Pudux_ from '@/images/pudux.svg'
     <code>Mobile</code> y <code>Backend</code>.
   </p>
   <div class="flex flex-row flex-wrap gap-2 py-2">
-    <TypeScript />
-    <Node />
-    <Next />
-    <Tailwind />
-    <ReactNative />
-    <Nest />
-    <ApolloGraphql />
+    <Image alt="TypeScript" src={TypeScript} width="83" height="20" />
+    <Image alt="Node" src={Node} width="69" height="20" />
+    <Image alt="Next" src={Next} width="53" height="20" />
+    <Image alt="Tailwind" src={Tailwind} width="89" height="20" />
+    <Image alt="ReactNative" src={ReactNative} width="93" height="20" />
+    <Image alt="Nest" src={Nest} width="61" height="20" />
+    <Image alt="ApolloGraphql" src={ApolloGraphql} width="111" height="20" />
+    <Image alt="Firebase" src={Firebase} width="71" height="20" />
+    <Image alt="AWS" src={AWS} width="53" height="20" />
   </div>
 </div>
