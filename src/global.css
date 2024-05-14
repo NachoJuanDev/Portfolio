@@ -26,7 +26,7 @@ h3 {
 }
 
 hr {
-  @apply border border-gray-800 dark:border-gray-500 border-dashed my-5;
+  @apply border border-gray-800 dark:border-gray-600 my-5;
 }
 
 section {

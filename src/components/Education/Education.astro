@@ -1,0 +1,56 @@
+---
+import Title from '@/ui/Title.astro'
+import Assistantships from '@/components/education/Assistantships.astro'
+---
+
+<section>
+  <Title text="Educación" />
+
+  <div class="grid grid-cols-2">
+    <p class="flex flex-col">
+      <span class="font-bold">Ingeniería Civil en Computación</span>
+      <span>Major: Computación, Track Computación</span>
+      <span>Minor: Data Science</span>
+    </p>
+    <p class="flex flex-col font-bold text-right">
+      <span>Pontificia Universidad Católica de Chile</span>
+      <span>2017-2023</span>
+    </p>
+  </div>
+  <hr />
+  <div class="grid grid-cols-2">
+    <p class="flex flex-col">
+      <span class="font-bold">Ayudante Senior</span>
+      <span>Carrera de ayudantes</span>
+      <span>Departamento de Ciencia de la Computación</span>
+    </p>
+    <p class="flex flex-col font-bold text-right">
+      <span>Pontificia Universidad Católica de Chile</span>
+      <span>2023</span>
+    </p>
+  </div>
+  <hr />
+
+  <div class="grid grid-cols-2 print:hidden">
+    <p class="flex flex-col">
+      <span class="font-bold">Ayudante</span>
+      <span>Departamento de Ciencia de la Computación</span>
+    </p>
+    <p class="flex flex-col font-bold text-right">
+      <span>Pontificia Universidad Católica de Chile</span>
+      <span>2018-2023</span>
+    </p>
+  </div>
+
+  <div class="hidden print:block">
+    <Assistantships />
+  </div>
+
+  <details class="print:hidden">
+    <summary class="my-4">Ayudantías</summary>
+
+    <div class="pl-2 mt-4">
+      <Assistantships />
+    </div>
+  </details>
+</section>
