@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets'
+import SocialLink from '@/components/ui/SocialLink.astro'
+import Github from '@/icons/Github.astro'
+import LinkedIn from '@/icons/LinkedIn.astro'
+import Mail from '@/icons/Mail.astro'
+import Me from '@/images/me.webp'
+---
+
+<section
+  class="w-full my-10 grid grid-cols-1 sm:grid-cols-[auto,1fr,1fr] gap-2 md:gap-0"
+>
+  <div class="flex justify-center">
+    <Image
+      alt="Imágen de perfil"
+      src={Me}
+      class="print:h-32 print:w-32 h-40 w-40 rounded-xl md:mr-5 print:mr-5"
+      height={128}
+      width={128}
+    />
+  </div>
+  <div class="flex flex-col items-center sm:items-start">
+    <h2>Juan Salas Morales</h2>
+    <p>Ingenierio Civil en Computación</p>
+    <p>Universidad Católica</p>
+    <p>Santiago, Chile</p>
+    <p>Desarrollador Fullstack</p>
+  </div>
+  <div class="flex flex-col items-center sm:items-start">
+    <h2>Redes</h2>
+    <SocialLink href="https://github.com/NachoJuanDev" icon={Github}>
+      <span class="hidden md:block">github.com/NachoJuanDev</span>
+      <span class="block md:hidden">@NachoJuanDev</span>
+    </SocialLink>
+    <SocialLink
+      href="https://www.linkedin.com/in/juan-salas-morales"
+      icon={LinkedIn}
+    >
+      <span class="hidden md:block">linkedin.com/in/juan-salas-morales</span>
+      <span class="block md:hidden">juan-salas-morales</span>
+    </SocialLink>
+    <SocialLink href="mailto:jisalas1@uc.cl" icon={Mail}>
+      jisalas1@uc.cl
+    </SocialLink>
+  </div>
+</section>
