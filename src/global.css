@@ -14,15 +14,15 @@ body {
 }
 
 h1 {
-  @apply text-3xl py-5 print:py-4;
+  @apply text-3xl py-5 print:py-4 break-after-avoid;
 }
 
 h2 {
-  @apply text-2xl py-3 print:py-2;
+  @apply text-2xl py-3 print:py-2 break-after-avoid;
 }
 
 h3 {
-  @apply text-xl py-1 print:py-0;
+  @apply text-xl py-1 print:py-0 break-after-avoid;
 }
 
 hr {
@@ -31,5 +31,5 @@ hr {
 }
 
 section {
-  @apply mb-6 break-inside-avoid;
+  @apply mb-6;
 }
