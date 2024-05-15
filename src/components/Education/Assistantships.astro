@@ -1,147 +1,81 @@
-<div class="grid grid-cols-2 break-inside-avoid">
-  <p class="flex flex-col">
-    <span class="font-bold">Ayudante de Cátedra</span>
-    <span>IIC1103 - Introducción a la Programación</span>
-    <span>Departamento de Ciencia de la Computación</span>
-  </p>
-  <p class="flex flex-col font-bold text-right">
-    <span> Pontificia Universidad Católica de Chile</span>
-    <span>Escuela de Ingeniería</span>
-    <span>2023-2</span>
-  </p>
-</div>
+---
+const puc = 'Pontificia Universidad Católica de Chile'
+const ing = 'Escuela de Ingeniería'
+const dcc = 'Departamento de Ciencia de la Computación'
+const iic1103 = 'IIC1103 - Introducción a la Programación'
+const iic1005 = 'IIC1005 - Computación: Ciencia y Tecnología del Mundo Digital'
+const iic2154 = 'IIC2154 - Proyecto de Especialidad'
 
-<hr />
+const data = [
+  {
+    name: 'Ayudante de Cátedra',
+    course: iic1103,
+    semester: '2023-2',
+  },
+  {
+    name: 'Ayudante de Cátedra',
+    course: iic1103,
+    semester: '2023-1',
+  },
+  {
+    name: 'Ayudante en aula',
+    course: iic1005,
+    semester: '2023-1',
+  },
+  {
+    name: () => 'Ayudante Coach de equipo',
+    course: iic2154,
+    semester: '2022-1',
+  },
+  {
+    name: 'Ayudante en aula',
+    course: iic1005,
+    semester: '2022-1',
+  },
+  {
+    name: 'Ayudante de Cátedra',
+    course: iic1103,
+    semester: '2021-2',
+  },
+  {
+    name: 'Ayudante de Cátedra',
+    course: iic1103,
+    semester: '2021-1',
+  },
+  {
+    name: 'Ayudante corrector',
+    course: iic1103,
+    semester: '2019-2',
+  },
+  {
+    name: 'Ayudante corrector',
+    course: iic1103,
+    semester: '2019-1',
+  },
+  {
+    name: 'Ayudante corrector',
+    course: iic1103,
+    semester: '2018-1',
+  },
+]
+---
 
-<div class="grid grid-cols-2 break-inside-avoid">
-  <p class="flex flex-col">
-    <span class="font-bold">Ayudante de Cátedra</span>
-    <span>IIC1103 - Introducción a la Programación</span>
-    <span>Departamento de Ciencia de la Computación</span>
-  </p>
-  <p class="flex flex-col font-bold text-right">
-    <span>Pontificia Universidad Católica de Chile</span>
-    <span>Escuela de Ingeniería</span>
-    <span>2023-1</span>
-  </p>
-</div>
-
-<hr />
-
-<div class="grid grid-cols-2 break-inside-avoid">
-  <p class="flex flex-col">
-    <span class="font-bold">Ayudante en aula</span>
-    <span>IIC1005 - Computación: Ciencia y Tecnología del Mundo Digital</span>
-    <span>Departamento de Ciencia de la Computación</span>
-  </p>
-  <p class="flex flex-col font-bold text-right">
-    <span>Pontificia Universidad Católica de Chile</span>
-    <span>Escuela de Ingeniería</span>
-    <span>2023-1</span>
-  </p>
-</div>
-
-<hr />
-
-<div class="grid grid-cols-2 break-inside-avoid">
-  <p class="flex flex-col">
-    <span class="font-bold">Ayudante <i>Coach</i> de equipo</span>
-    <span>IIC2154 - Proyecto de Especialidad</span>
-    <span>Departamento de Ciencia de la Computación</span>
-  </p>
-  <p class="flex flex-col font-bold text-right">
-    <span>Pontificia Universidad Católica de Chile</span>
-    <span>Escuela de Ingeniería</span>
-    <span>2022-1</span>
-  </p>
-</div>
-
-<hr />
-
-<div class="grid grid-cols-2 break-inside-avoid">
-  <p class="flex flex-col">
-    <span class="font-bold">Ayudante en aula</span>
-    <span>IIC1005 - Computación: Ciencia y Tecnología del Mundo Digital</span>
-    <span>Departamento de Ciencia de la Computación</span>
-  </p>
-  <p class="flex flex-col font-bold text-right">
-    <span>Pontificia Universidad Católica de Chile</span>
-    <span>Escuela de Ingeniería</span>
-    <span>2022-1</span>
-  </p>
-</div>
-
-<hr />
-
-<div class="grid grid-cols-2 break-inside-avoid">
-  <p class="flex flex-col">
-    <span class="font-bold">Ayudante de Cátedra</span>
-    <span>IIC1103 - Introducción a la Programación</span>
-    <span>Departamento de Ciencia de la Computación</span>
-  </p>
-  <p class="flex flex-col font-bold text-right">
-    <span>Pontificia Universidad Católica de Chile</span>
-    <span>Escuela de Ingeniería</span>
-    <span>2021-2</span>
-  </p>
-</div>
-
-<hr />
-
-<div class="grid grid-cols-2 break-inside-avoid">
-  <p class="flex flex-col">
-    <span class="font-bold">Ayudante de Cátedra</span>
-    <span>IIC1103 - Introducción a la Programación</span>
-    <span>Departamento de Ciencia de la Computación</span>
-  </p>
-  <p class="flex flex-col font-bold text-right">
-    <span>Pontificia Universidad Católica de Chile</span>
-    <span>Escuela de Ingeniería</span>
-    <span>2021-1</span>
-  </p>
-</div>
-
-<hr />
-
-<div class="grid grid-cols-2 break-inside-avoid">
-  <p class="flex flex-col">
-    <span class="font-bold">Ayudante corrector</span>
-    <span>IIC1103 - Introducción a la Programación</span>
-    <span>Departamento de Ciencia de la Computación</span>
-  </p>
-  <p class="flex flex-col font-bold text-right">
-    <span>Pontificia Universidad Católica de Chile</span>
-    <span>Escuela de Ingeniería</span>
-    <span>2019-2</span>
-  </p>
-</div>
-
-<hr />
-
-<div class="grid grid-cols-2 break-inside-avoid">
-  <p class="flex flex-col">
-    <span class="font-bold">Ayudante corrector</span>
-    <span>IIC1103 - Introducción a la Programación</span>
-    <span>Departamento de Ciencia de la Computación</span>
-  </p>
-  <p class="flex flex-col font-bold text-right">
-    <span>Pontificia Universidad Católica de Chile</span>
-    <span>Escuela de Ingeniería</span>
-    <span>2019-1</span>
-  </p>
-</div>
-
-<hr />
-
-<div class="grid grid-cols-2 break-inside-avoid">
-  <p class="flex flex-col">
-    <span class="font-bold">Ayudante corrector</span>
-    <span>IIC1103 - Introducción a la Programación</span>
-    <span>Departamento de Ciencia de la Computación</span>
-  </p>
-  <p class="flex flex-col font-bold text-right">
-    <span>Pontificia Universidad Católica de Chile</span>
-    <span>Escuela de Ingeniería</span>
-    <span>2018-1</span>
-  </p>
-</div>
+{
+  data.map(({ name, course, semester }, i, arr) => (
+    <>
+      <div class="grid grid-cols-2 break-inside-avoid">
+        <p class="flex flex-col">
+          <span class="font-bold">{name}</span>
+          <span>{course}</span>
+          <span>{dcc}</span>
+        </p>
+        <p class="flex flex-col font-bold text-right">
+          <span>{puc}</span>
+          <span>{ing}</span>
+          <span>{semester}</span>
+        </p>
+      </div>
+      {i + 1 !== arr.length && <hr />}
+    </>
+  ))
+}
