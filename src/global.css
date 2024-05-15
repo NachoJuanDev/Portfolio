@@ -26,8 +26,7 @@ h3 {
 }
 
 hr {
-  @apply border border-gray-800 dark:border-gray-600 my-5;
-  @apply break-before-avoid;
+  @apply border-b-[1] border-gray-600 dark:border-gray-400  my-5;
 }
 
 section {
