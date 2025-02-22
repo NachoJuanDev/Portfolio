@@ -1,0 +1,57 @@
+---
+import { Image } from 'astro:assets'
+
+import PulsoEscolar_ from '@/images/pulso_escolar.ico'
+import Docker from '@/badges/Docker.svg'
+import Node from '@/badges/Node.svg'
+import Python from '@/badges/Python.svg'
+import Rails from '@/badges/Rails.svg'
+import Vue from '@/badges/Vue.svg'
+---
+
+<div>
+  <span class="flex flex-row flex-wrap text-lg font-semibold mb-2">
+    - 2024-Actualidad -
+    <Image
+      alt="PulsoEscolar"
+      src={PulsoEscolar_}
+      class="h-5 w-5 mx-2"
+      width={20}
+      height={20}
+    />
+    <a href="https://www.pulsoescolar.com/" target="_blank">Pulso Escolar</a>,
+    EdTech. Ingenierio de Software.
+  </span>
+  <p>
+    Utilizamos tecnología como <code>Ruby on Rails</code> con un
+    <code>Frontend</code> en <code>Vue</code>.
+  </p>
+  <div class="flex flex-row flex-wrap gap-2 py-4">
+    <Image alt="Rails" src={Rails} width="57" height="20" />
+    <Image alt="Python" src={Vue} width="67" height="20" />
+    <Image alt="Python" src={Python} width="67" height="20" />
+    <Image alt="Node" src={Node} width="69" height="20" />
+    <Image alt="Docker" src={Docker} width="65" height="20" />
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+    <div>
+      <h3>Responsabilidades</h3>
+      <ul>
+        <li>Trabajo en equipo multidisciplinar</li>
+        <li>Desarrollo de nuevas funcionalidades</li>
+        <li>Mantenimiento y reparación de errores</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Aprendizajes destacados</h3>
+      <ul>
+        <li>Uso de la metodología Shape Up</li>
+        <li>Uso de nuevas tecnologías</li>
+        <li>
+          Uso de nueva nube (<code>Google Cloud</code>) y arquitectura de
+          Software
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
